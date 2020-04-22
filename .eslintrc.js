@@ -28,6 +28,7 @@ module.exports = {
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     'no-console': 'warn',
     'no-plusplus': 'off',
+    'no-param-reassign': 'error',
   },
   settings: {
     'import/resolver': {

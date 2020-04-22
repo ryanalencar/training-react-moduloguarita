@@ -9,3 +9,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root'),
 );
+
+export function Teste() {
+  return <h1>teste</h1>;
+}

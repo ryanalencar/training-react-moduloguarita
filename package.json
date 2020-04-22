@@ -1,0 +1,87 @@
+{
+  "name": "training-react-moduloguarita",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env CI=1 react-scripts test --env=jsdom --coverage",
+    "test:update": "cross-env CI=1 react-scripts test --env=jsdom --coverage --updateSnapshot",
+    "lint": "eslint src --ext js,jsx,ts,tsx",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Emanuel-Soares/Treinamento-Avatar"
+  },
+  "keywords": [
+    "react",
+    "training",
+    "moduloguarita"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "customize-cra": "^0.9.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "babel-plugin-root-import": "^6.5.0",
+    "coveralls": "^3.0.13",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "prettier": "^2.0.5",
+    "react-app-rewired": "^2.1.5",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverageFrom": [
+      "src/**/**/**/*.{js,jsx,ts,tsx}",
+      "src/**/**/*.{js,jsx,ts,tsx}",
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/setup*.{js,ts}",
+      "!**/setup*.{js,ts}"
+    ],
+    "displayName": "Treinamento-Avatar",
+    "moduleNameMapper": {
+      "^~/(.*)$": "<rootDir>/src/$1",
+      "src/(.*)": "<rootDir>/src/$1"
+    }
+  }
+}

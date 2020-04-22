@@ -6,4 +6,4 @@ function Something2(a, b) {
   return a - b;
 }
 
-export { Something1, Something2 };
+export { something1, Something2 };

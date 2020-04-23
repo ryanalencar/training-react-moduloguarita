@@ -1,0 +1,11 @@
+a.app-navitem {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  font-weight: 300;
+}
+
+.app-navitem:hover {
+  background: linear-gradient(135deg, #07a7e3 0%, #32dac3 100%);
+}

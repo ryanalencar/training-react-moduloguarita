@@ -1,0 +1,52 @@
+:root {
+  --bg-dark: #1a2f3a;
+  --app-background: #f5f5f5;
+
+  --sidebar-width: 225px;
+  --header-height: 100px;
+  --footer-height: 50px;
+
+  --shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+  height: 100vh;
+  background-color: var(--app-background);
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
+  grid-template-areas:
+    'logo header'
+    'sidebar main'
+    'sidebar footer';
+}
+
+.app-header {
+  grid-area: header;
+}
+
+.app-sidebar {
+  grid-area: sidebar;
+}
+
+.app-main {
+  grid-area: main;
+}
+
+.app-footer {
+  grid-area: footer;
+}
+
+.logo {
+  grid-area: logo;
+}

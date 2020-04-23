@@ -1,0 +1,4 @@
+nav.app-sidebar {
+  background-color: var(--bg-dark);
+  box-shadow: var(--shadow);
+}

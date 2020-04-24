@@ -2,13 +2,13 @@
 Adquirir status do servidor
 
 #### theme
-Adquriri tema de cores. 
+Adquriri tema de cores.
 *Essa rota não precisa de token de autenticação.*
 
 **GET:** ```{{url}}/theme```
 
 *response:*
-``` json
+``` javascript
 // exemplo:
 {
   "app": {

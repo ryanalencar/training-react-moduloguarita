@@ -3,7 +3,7 @@
 **GET:** ``` {url}/events/types ```
 
 *response:*
-``` json
+``` javascript
 // lista tipos de eventos possíveis
 {
   "eventTypeOptions": [
@@ -33,13 +33,13 @@
 **POST:** ``` {url}/events/list ```
 
 *request:*
-``` json
+``` javascript
 // listar eventos de um guarita
 {
   "idguarita": 112
 }
 ```
-``` json
+``` javascript
 // filtrar eventos
 {
   "filter": {
@@ -52,7 +52,7 @@
 ```
 
 *response: (pagination)*
-``` json
+``` javascript
 {
   "online": true,
   "name": "EQUIPAMENT NAME",

@@ -10,7 +10,7 @@ Utilizar antes de reiniciar o servidor por algum motivo
 **GET:** ```{{url}}/saveall```
 
 *response:*
-``` json
+``` javascript
 // exemplo:
 {
   "clients": [
@@ -42,7 +42,7 @@ Mostra resumo do servidor
 **GET:** ```{{url}}/dashboard/status```
 
 *response:*
-``` json
+``` javascript
 // exemplo:
 {
   "version": "1.0.0",
@@ -70,7 +70,7 @@ Mostra clientes conectados
 **GET:** ```{{url}}/dashboard/status/clients```
 
 *response:*
-``` json
+``` javascript
 // exemplo:
 {
     "totalHCS": 152,
@@ -85,7 +85,7 @@ Mostra resumo de módulos guaritas conectados
 **GET:** ```{{url}}/dashboard/status/modulos```
 
 *response:*
-``` json
+``` javascript
 // exemplo:
 {
     "version": "1.0.0",
@@ -105,7 +105,7 @@ Mostra resumo do fluxo de dados
 **POST:** ```{{url}}/dashboard/status/buffered```
 
 *request:*
-``` json
+``` javascript
 // exemplo:
 {
   "filter": {
@@ -115,7 +115,7 @@ Mostra resumo do fluxo de dados
 ```
 
 *response:*
-``` json
+``` javascript
 // exemplo para fluxo dos últimos 10 dias:
 {
   "filter": {
@@ -144,7 +144,7 @@ Mostra resumo dos eventos emitidos
 **POST:** ```{{url}}/dashboard/status/emitted```
 
 *request:*
-``` json
+``` javascript
 // exemplo:
 {
   "filter": {
@@ -154,7 +154,7 @@ Mostra resumo dos eventos emitidos
 ```
 
 *response:*
-``` json
+``` javascript
 // exemplo para fluxo dos últimos 10 dias:
 {
   "filter": {

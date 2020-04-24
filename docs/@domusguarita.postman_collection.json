@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "aa693c80-aa6d-4b40-8ef7-0d9dae620783",
+		"name": "@domusguarita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/guaritas",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "/events",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"filter\": {\r\n\t\t\"idg\": [ 2, 55],\r\n\t\t\"eventType\": 0\r\n\t},\r\n\t\"order\": \"desc\",\r\n\t\"orderby\": \"id\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/events/list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"list"
+							]
+						},
+						"description": "Listar eventos"
+					},
+					"response": []
+				},
+				{
+					"name": "types",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"filter\": {\r\n\t\t\"idg\": [ 2, 55],\r\n\t\t\"eventType\": 0\r\n\t},\r\n\t\"order\": \"desc\",\r\n\t\"orderby\": \"id\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/events/types",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"events",
+								"types"
+							]
+						},
+						"description": "Listar eventos"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "/dashboard",
+			"item": [
+				{
+					"name": "status/buffered",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"filter\": {\n        \"lastDays\": 10\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/dashboard/status/buffered",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dashboard",
+								"status",
+								"buffered"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "status/clients",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/dashboard/status/clientes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dashboard",
+								"status",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "status/modulos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/dashboard/status/modulos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dashboard",
+								"status",
+								"modulos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "status/emitted",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"filter\": {\r\n    \t\"lastDays\": 10\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/dashboard/status/emitted",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dashboard",
+								"status",
+								"emitted"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "status/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"filter\": {\r\n    \t\"lastDays\": 10\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/dashboard/status",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dashboard",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/saveall",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/dashboard/saveall",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"dashboard",
+								"saveall"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "index",
+			"item": [
+				{
+					"name": "theme",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/theme",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"theme"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,17 @@
+header.app-header {
+  background-color: #fff;
+  box-shadow: var(--shadow);
+  padding: 0 10px;
+}
+
+header h1 {
+  margin: 0;
+  /* margin: -5px 0 0 10px; */
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+header h3 {
+  margin: 0;
+  font-weight: 100;
+}

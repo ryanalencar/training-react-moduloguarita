@@ -4,7 +4,11 @@
     "*.js": "javascriptreact",
     "*.jsx": "javascriptreact"
   },
+<<<<<<< HEAD
   "editor.rulers": [105],
+=======
+  "editor.rulers": [120],
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true,

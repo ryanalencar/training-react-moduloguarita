@@ -26,14 +26,18 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "customize-cra": "^0.9.1",
+    "polished": "^3.5.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-switch": "^5.0.1",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@types/styled-components": "^5.1.0",
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
     "babel-plugin-root-import": "^6.5.0",

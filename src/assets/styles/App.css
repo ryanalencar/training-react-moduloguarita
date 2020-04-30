@@ -4,7 +4,11 @@
 
 .App-logo {
   height: 40vmin;
+<<<<<<< HEAD
+  max-height: 120px;
+=======
   max-height: 64px;
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
   pointer-events: none;
 }
 
@@ -15,14 +19,21 @@
 }
 
 .App-header {
+<<<<<<< HEAD
+=======
   background-color: #0e2841;
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+<<<<<<< HEAD
+  color: black;
+=======
   color: white;
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
 }
 
 .App-link {

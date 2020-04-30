@@ -16,7 +16,15 @@
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "https://github.com/Emanuel-Soares/TreinamentoAvatar"
+=======
+<<<<<<< HEAD
+    "url": "https://github.com/avatarsolucoes/training-react-moduloguarita.git"
+=======
+    "url": "https://github.com/Emanuel-Soares/Treinamento-Avatar"
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
+>>>>>>> 6dc4c134d8b40398ca70f25e1c8177e9f79fb6cf
   },
   "keywords": [
     "react",
@@ -27,6 +35,17 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+<<<<<<< HEAD
+    "axios": "^0.19.2",
+    "customize-cra": "^0.9.1",
+    "polished": "^3.5.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "react-switch": "^5.0.1",
+    "styled-components": "^5.1.0"
+=======
     "customize-cra": "^0.9.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -34,10 +53,15 @@
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1"
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+<<<<<<< HEAD
+    "@types/styled-components": "^5.1.0",
+=======
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
     "babel-plugin-root-import": "^6.5.0",
@@ -85,7 +109,11 @@
       "!src/**/setup*.{js,ts}",
       "!**/setup*.{js,ts}"
     ],
+<<<<<<< HEAD
+    "displayName": "training-react-moduloguarita",
+=======
     "displayName": "Treinamento-Avatar",
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
     "moduleNameMapper": {
       "^~/(.*)$": "<rootDir>/src/$1",
       "src/(.*)": "<rootDir>/src/$1"

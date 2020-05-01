@@ -1,21 +1,22 @@
-import React, { useContext } from 'react';
-import Switch from 'react-switch';
-import { ThemeContext } from 'styled-components';
-import { shade } from 'polished';
+import React, { useContext } from "react";
+import PropTypes from "prop-types";
+import Switch from "react-switch";
+import { ThemeContext } from "styled-components";
+import { shade } from "polished";
 
-import { Container, Brand } from './styles.ts';
+import { Container, Brand } from "./styles.ts";
 
 export default function Header(props) {
+  const { toggleTheme } = props;
   const { colors, title } = useContext(ThemeContext);
-
   return (
     <>
       <Container>
         <Brand>Domus Training</Brand>
 
         <Switch
-          onChange={props.toggleTheme}
-          checked={title === 'dark'}
+          onChange={toggleTheme}
+          checked={title === "dark"}
           checkedIcon={false}
           uncheckedIcon={false}
           height={12}
@@ -28,3 +29,11 @@ export default function Header(props) {
     </>
   );
 }
+
+Header.propTypes = {
+  toggleTheme: PropTypes.string,
+};
+
+Header.defaultProps = {
+  toggleTheme: null,
+};

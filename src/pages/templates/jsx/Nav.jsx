@@ -1,6 +1,6 @@
-import React from 'react';
-import NavItem from './NavItem';
-import '../css/Nav.css';
+import React from "react";
+import NavItem from "./NavItem";
+import "../css/Nav.css";
 
 export default function Nav() {
   return (

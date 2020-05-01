@@ -15,9 +15,9 @@ export default function Header(props) {
 Header.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
-};
+}
 
 Header.defaultProps = {
   title: null,
   subtitle: null,
-};
+}

@@ -1,8 +1,4 @@
 import React, { useContext } from "react";
-<<<<<<< HEAD
-=======
-import PropTypes from "prop-types";
->>>>>>> 590e82619bae2df9054b2d4fa751d76098a85e5a
 import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
 import { shade } from "polished";
@@ -18,11 +14,7 @@ export default function Header(props) {
         <Brand>Domus Training</Brand>
 
         <Switch
-<<<<<<< HEAD
-          onChange={props.toggleTheme}
-=======
           onChange={toggleTheme}
->>>>>>> 590e82619bae2df9054b2d4fa751d76098a85e5a
           checked={title === "dark"}
           checkedIcon={false}
           uncheckedIcon={false}

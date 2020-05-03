@@ -15,7 +15,7 @@
 
 .login-mail:hover, .login-pass:hover, .login-mail:focus, .login-pass:focus {
     transition: 0.5s all;
-    box-shadow: 0 2px rgba(153, 153, 153, 0.2);
+    box-shadow: 0 2px rgba(52, 52, 52, 0.2);
     border: 1px solid rgba(153, 153, 153, 0.4);
 }
 
@@ -57,4 +57,10 @@
     background: rgb(46, 78, 95);
     transform: scale(0.98);
     transition: 0.3s all;
+}
+
+.login-error {
+    color: #ff8080;
+    margin: 5px;
+    font-size: 14px;
 }

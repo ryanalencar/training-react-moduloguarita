@@ -12,6 +12,7 @@ export default function usePersistedState(key, initialState) {
 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(state));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state]);
 
   return [state, setState];

@@ -7,7 +7,36 @@
 	"item": [
 		{
 			"name": "/guaritas",
-			"item": [],
+			"item": [
+				{
+					"name": "/list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/guaritas/list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"guaritas",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"protocolProfileBehavior": {}
 		},
 		{
@@ -648,6 +677,62 @@
 							"path": [
 								"sessions",
 								"online"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "/guaritasuser",
+			"item": [
+				{
+					"name": "/list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"size\":10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/guaritasuser/list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"guaritasuser",
+								"list"
 							]
 						}
 					},

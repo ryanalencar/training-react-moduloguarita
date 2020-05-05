@@ -67,7 +67,7 @@ export default function Login() {
               name="email"
               className="login-mail"
               placeholder="Endereço de email"
-              autocomplete="off"
+              autoComplete="off"
             />
             <ErrorMessage
               component="span"
@@ -79,7 +79,7 @@ export default function Login() {
               name="password"
               className="login-pass"
               placeholder="Senha"
-              autocomplete="off"
+              autoComplete="off"
             />
             <Link to="/recover" className="login-forgot">
               Esqueceu a senha?

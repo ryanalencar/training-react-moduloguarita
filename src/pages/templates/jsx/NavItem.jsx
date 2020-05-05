@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../css/NavItem.css";
 
 export default function Header(props) {
   const { href, label } = props;
   return (
-    <a href={href} className="app-navitem">
+    <Link to={href} className="app-navitem">
       {label}
-    </a>
+    </Link>
   );
 }
 

@@ -22,8 +22,6 @@ export default function SignUp() {
     axios.post();
   };
 
-  const validateName = (value) => value.replace(/\d/g, "");
-
   const validations = yup.object().shape({
     email: yup
       .string()
@@ -73,7 +71,7 @@ export default function SignUp() {
               name="email"
               className="login-mail"
               placeholder="Endereço de email"
-              autocomplete="off"
+              autoComplete="off"
             />
             <ErrorMessage
               component="span"
@@ -85,7 +83,7 @@ export default function SignUp() {
               name="name"
               className="login-field"
               placeholder="Nome"
-              autocomplete="off"
+              autoComplete="off"
             />
             <ErrorMessage
               component="span"
@@ -97,7 +95,7 @@ export default function SignUp() {
               name="password"
               className="login-pass"
               placeholder="Senha"
-              autocomplete="off"
+              autoComplete="off"
             />
             {/* <Link to="/home"> */}
             <button className="login-enter" type="submit">

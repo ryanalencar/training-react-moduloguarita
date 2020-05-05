@@ -81,7 +81,7 @@ export default function SignUp() {
             <Field
               type="text"
               name="name"
-              className="login-field"
+              className="login-mail"
               placeholder="Nome"
               autoComplete="off"
             />

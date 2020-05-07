@@ -1,8 +1,8 @@
 {
-  "homepage": "https://emanuel-soares.github.io/treinamento-avatar",
+  "homepage": "https://Emanuel-Soares.github.io/treinamento-avatar",
   "name": "treinamento-avatar",
   "version": "0.1.0",
-  "private": true,
+  "private": true,  
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/emanuel-soares/treinamento-avatar"
+    "url": "https://github.com/Emanuel-Soares/treinamento-avatar"
   },
   "keywords": [
     "react",

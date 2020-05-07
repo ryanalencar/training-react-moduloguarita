@@ -3,7 +3,7 @@
   Training web react modulo guarita
 </p>
 
-[![Coverage Status](https://coveralls.io/repos/github/avatarsolucoes/training-react-moduloguarita/badge.svg?branch=master)](https://coveralls.io/github/avatarsolucoes/training-react-moduloguarita?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Coverage Status](https://coveralls.io/repos/github/avatarsolucoes/training-react-moduloguarita/badge.svg?branch=master)](https://coveralls.io/github/avatarsolucoes/training-react-moduloguarita?branch=master) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![ci](https://github.com/avatarsolucoes/training-react-moduloguarita/workflows/ci/badge.svg)
 
 ### Contributing
 

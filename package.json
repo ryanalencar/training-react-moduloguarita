@@ -1,11 +1,8 @@
 {
-  "homepage": "https://Emanuel-Soares.github.io/treinamento-avatar",
-  "name": "treinamento-avatar",
+  "name": "training-react-moduloguarita",
   "version": "0.1.0",
   "private": true,  
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "cross-env CI=1 react-scripts test --env=jsdom --coverage",
@@ -61,7 +58,6 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "gh-pages": "^2.2.0",
     "prettier": "^2.0.5",
     "react-app-rewired": "^2.1.5",
     "stylelint": "^13.3.3",
@@ -94,7 +90,7 @@
       "!src/**/setup*.{js,ts}",
       "!**/setup*.{js,ts}"
     ],
-    "displayName": "react-training-modulo-guarita",
+    "displayName": "react-training-moduloguarita",
     "moduleNameMapper": {
       "^~/(.*)$": "<rootDir>/src/$1",
       "src/(.*)": "<rootDir>/src/$1"

@@ -59,7 +59,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"filter\": {\r\n\t\t\"idg\": [ 2, 55],\r\n\t\t\"eventType\": 0\r\n\t},\r\n\t\"order\": \"desc\",\r\n\t\"orderby\": \"id\"\r\n}",
+							"raw": "{\r\n\t\"id\": 112,\r\n\t\"order\": \"desc\",\r\n\t\"orderby\": \"dtevent\",\r\n\t\"page\": 1,\r\n\t\"size\": 32,\r\n\t\"format\":\"csv\",\r\n\t\"filter\": {\r\n\t\t\r\n\t}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -508,7 +508,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"email\": \"example@domain.com\",\n\t\"password\": \"ABCDEFGHIJ\"\n}",
+							"raw": "{\n\t\"email\": \"leandro.sbrissa@hotmail.com\",\n\t\"password\": \"senha\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -546,9 +546,6 @@
 			"item": [
 				{
 					"name": "token",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -560,11 +557,11 @@
 								}
 							]
 						},
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"iduser\": 1\n}",
+							"raw": "{\n\t\"iduser\": 1,\n\t\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJsZWFuZHJvLnNicmlzc2FAaG90bWFpbC5jb20iLCJuaXZlbCI6OSwiY29va2llIjoiMzQ0OWM5ZTVlMzMyZjFkYmI4MTUwNWNkNzM5ZmJmM2YiLCJpYXQiOjE1ODg5NTQ1MzgsImV4cCI6MTU4ODk1ODEzOH0.WIwkwabOlIvwmdVWeJ9bPYJYBICMHztP-aCm6462P8Q\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -733,6 +730,43 @@
 							"path": [
 								"guaritasuser",
 								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actions (actionOut simples)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"idguarita\": 112,\n\t\"deviceType\":1,\n\t\"can\":1,\n\t\"out\":1,\n\t\"createEvent\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/guaritasuser/action",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"guaritasuser",
+								"action"
 							]
 						}
 					},

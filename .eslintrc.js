@@ -4,7 +4,6 @@ module.exports = {
     jest: true,
     es6: true,
   },
-  extends: ['airbnb', 'prettier', 'prettier/react'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -17,6 +16,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
+  extends: ['airbnb', 'prettier', 'prettier/react'],
   plugins: ['react', 'jsx-a11y', 'import', 'react-hooks', 'prettier'],
   rules: {
     'prettier/prettier': 'error',

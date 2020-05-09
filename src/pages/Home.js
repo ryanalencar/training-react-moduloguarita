@@ -1,23 +1,20 @@
-import React from "react";
-import logo from "../assets/logo.svg";
+import React from 'react';
+import '../assets/styles/App2.css';
 
-export default function PageHome() {
+import Logo from './templates/jsx/Logo';
+import Header from './templates/jsx/Header';
+import Main from './templates/jsx/Main';
+import Nav from './templates/jsx/Nav';
+import Footer from './templates/jsx/Footer';
+
+export default function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>&quot;./src/pages/Home.js&quot;</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/avatarsolucoes/training-react-moduloguarita.git"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github
-        </a>
-      </header>
+    <div className="app">
+      <Logo />
+      <Header title="Início" subtitle="Host de projetos para treinamento" />
+      <Main />
+      <Nav />
+      <Footer />
     </div>
   );
 }

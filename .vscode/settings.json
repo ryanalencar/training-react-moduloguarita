@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "files.associations": {
     "*.js": "javascriptreact",
     "*.jsx": "javascriptreact"
@@ -8,7 +8,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true,
-    "source.fixAll.stylelint": true
+    "source.fixAll.stylelint": false
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,

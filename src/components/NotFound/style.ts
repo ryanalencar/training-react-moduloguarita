@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.body`
   height: 100%;
@@ -6,7 +6,7 @@ export const Container = styled.body`
   color: black;
   font-size: 100%;
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-y: hidden;
 `;
 

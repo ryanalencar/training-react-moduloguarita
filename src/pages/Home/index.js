@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { App, AppLogo, AppHeader, AppLink } from "./style.ts";
+import { App, AppLogo, AppHeader, AppLink } from './style.ts';
 
 export default function PageHome(props) {
   const { logo } = props;
@@ -11,8 +11,7 @@ export default function PageHome(props) {
         <AppHeader>
           <AppLogo alt="logo" src={logo} />
           <p>
-            Edit <code>&quot;./src/pages/Home/index.js&quot;</code> and save to
-            reload.
+            Edit <code>&quot;./src/pages/Home/index.js&quot;</code> and save to reload.
           </p>
           <AppLink
             href="https://github.com/avatarsolucoes/training-react-moduloguarita.git"

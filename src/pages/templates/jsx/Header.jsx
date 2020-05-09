@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "../css/Header.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import '../css/Header.css';
 
 export default function Header(props) {
   const { title, subtitle } = props;

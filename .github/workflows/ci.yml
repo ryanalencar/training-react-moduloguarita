@@ -2,15 +2,23 @@ name: ci
 
 on:
   pull_request:
+<<<<<<< HEAD
   #push:
+=======
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     env:
+<<<<<<< HEAD
       github-token: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+=======
+      github-token: ${{secrets.GITHUB_TOKEN}}
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
 
     steps:
     - name: Checkout repository
@@ -47,8 +55,15 @@ jobs:
     - name: Check commit message
       uses: wagoid/commitlint-github-action@v1
 
+<<<<<<< HEAD
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
+=======
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+>>>>>>> 9802e06b247dd94aaf7d4448daac3ce2aa4c066d
         path-to-lcov: ./coverage/lcov.info

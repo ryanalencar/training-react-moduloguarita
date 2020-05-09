@@ -4,7 +4,6 @@ function something1(a, b) {
 
 function something2(a, b) {
   // Ryan
-  const ab = ' ';
   return a - b;
 }
 

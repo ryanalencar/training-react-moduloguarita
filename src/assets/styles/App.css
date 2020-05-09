@@ -4,7 +4,7 @@
 
 .App-logo {
   height: 40vmin;
-  max-height: 64px;
+  max-height: 120px;
   pointer-events: none;
 }
 
@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -31,18 +31,27 @@
 }
 
 @keyframes App-logo-fadeInOut {
-  0% { opacity: 0.1; }
-  25% { opacity: 0.5; }
-  50% { opacity: 1; }
-  75% { opacity: 0.5; }
-  100% { opacity: 0.1; }
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }

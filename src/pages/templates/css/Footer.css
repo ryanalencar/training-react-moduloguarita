@@ -1,0 +1,16 @@
+footer.app-footer {
+  box-shadow: var(--shadow);
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer.app-footer p {
+  margin-right: 30px;
+  font-size: 1.1em;
+}
+
+footer.app-footer p strong {
+  color: #334;
+}

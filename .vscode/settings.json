@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "files.associations": {
     "*.js": "javascriptreact",
     "*.jsx": "javascriptreact"
@@ -9,5 +9,12 @@
     "source.fixAll.eslint": true,
     "source.fixAll.tslint": true,
     "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "eslint.format.enable": true,
+  "prettier.configPath": ".prettierrc.js",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }

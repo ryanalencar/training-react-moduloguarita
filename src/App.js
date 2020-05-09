@@ -1,10 +1,8 @@
-import React from 'react';
-import PageHome from './pages/Home';
+import React from "react";
 
-import './assets/styles/App.css';
+import Routes from "./routes";
+import "./assets/styles/App.css";
 
-function App() {
-  return <PageHome />;
+export default function App() {
+  return <Routes />;
 }
-
-export default App;

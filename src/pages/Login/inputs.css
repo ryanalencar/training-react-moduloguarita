@@ -1,0 +1,66 @@
+.login-content input, .login-content button, .login-content a {
+    width: 100%;
+    display: inline-block;
+}
+
+.login-mail, .login-pass, .login-field {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #999;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s all;
+}
+
+.login-mail:hover, .login-pass:hover, .login-mail:focus, .login-pass:focus {
+    transition: 0.5s all;
+    box-shadow: 0 2px rgba(52, 52, 52, 0.2);
+    border: 1px solid rgba(153, 153, 153, 0.4);
+}
+
+.login-forgot {
+    margin-bottom: 20px;
+    text-align: right;
+    text-decoration: none;
+    color: #8996a4;
+    font-size: 0.8em;
+    transition: 0.2s all;
+}
+
+.login-forgot:hover {
+    transition: 0.2s all;
+    color: #009fd7;
+}
+
+.login-enter {
+    padding: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    background: #2F424C;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.5s all;
+}
+
+.login-enter:hover {
+    background: rgb(46, 78, 95);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(46, 78, 95));
+    transform: scale(1.04);
+    transition: 0.5s all;
+}
+
+.login-enter:active {
+    background: rgb(46, 78, 95);
+    transform: scale(0.98);
+    transition: 0.3s all;
+}
+
+.login-error {
+    color: #ff8080;
+    margin: 5px;
+    font-size: 14px;
+}

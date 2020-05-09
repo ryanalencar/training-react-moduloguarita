@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import PropTypes from "prop-types";
-import Switch from "react-switch";
-import { ThemeContext } from "styled-components";
-import { shade } from "polished";
+import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
+import Switch from 'react-switch';
+import { ThemeContext } from 'styled-components';
+import { shade } from 'polished';
 
-import { Container, Brand } from "./styles.ts";
+import { Container, Brand } from './styles.ts';
 
 export default function Header(props) {
   const { toggleTheme } = props;
@@ -16,7 +16,7 @@ export default function Header(props) {
 
         <Switch
           onChange={toggleTheme}
-          checked={title === "dark"}
+          checked={title === 'dark'}
           checkedIcon={false}
           uncheckedIcon={false}
           height={12}

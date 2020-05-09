@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import logo from "../../assets/darklogo.svg";
-import { Container, Button, Text, Title, Logo } from "./style.ts";
+import logo from '../../assets/darklogo.svg';
+import { Container, Button, Text, Title, Logo } from './style.ts';
 
 const NotFound = () => {
   return (
@@ -11,7 +11,7 @@ const NotFound = () => {
         <img
           src={logo}
           alt="Logo Avatar Soluções"
-          style={{ width: 500, height: 120, textAlign: "center" }}
+          style={{ width: 500, height: 120, textAlign: 'center' }}
         />
       </Logo>
       <Title>404 Not Found</Title>

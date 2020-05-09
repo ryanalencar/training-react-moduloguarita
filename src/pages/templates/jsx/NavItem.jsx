@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import "../css/NavItem.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import '../css/NavItem.css';
 
 export default function Header(props) {
   const { href, label } = props;

@@ -16,7 +16,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:@typescript-eslint/recommended'],
   plugins: ['react', 'jsx-a11y', 'import', 'react-hooks', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
@@ -29,12 +29,20 @@ module.exports = {
     'no-console': 'warn',
     'no-plusplus': 'off',
     'no-param-reassign': 'error',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
+    '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
   },
   settings: {
     'import/resolver': {
       'babel-plugin-root-import': {
         rootPathSuffix: 'src',
       },
+    },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
   },
 };
